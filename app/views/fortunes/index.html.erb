@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!--対策-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!--SEO-->
+    <title>今日のおみくじ占い</title>
+    <meta name="keywords" content="">
+    <meta name="description" content=""><!--ページ詳細. 120字以内に収める。最初の40字は大事。ページごとにそのページの詳細を記載する。-->
+    <meta name="author" content=""><!--製作者の名前or会社名-->
+    <link rel="canonical" href=""><!--正規のURLを検索エンジンにしめす。-->
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/stylesheets/normalize.css">
+    <link rel="stylesheet" href="../assets/stylesheets/style.css">  
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<header>
+  <div class="container">
+    <img class="header_logo" src="/omikuzi_image/logo.png" alt="今日のおみくじ">
+  </div><!-- container-->
+</header><!-- header-->
+
+<main>
+  <div class="container">
+    <div class="contents">
+      <%= form_tag("/fortunes/result") do%>
+          <div >
+              <label for="name">お名前</label>
+              <input type="text" name="name">
+          </div>
+
+          <div >
+            <label for="birthday">誕生日</label>
+            <input type="text" name="birthday" placeholder="1990-08-24">
+        </div> 
+
+        <div >
+            <label for="gender">性別</label>
+            <input type="text" name="gender">
+        </div>                 
+
+        <div >
+            <label for="like">好きなもの</label>
+            <input type="text" name="like">
+        </div>  
+        
+        <div>
+            <input type="submit" value="占う">
+        </div>
+    <% end %>
+    </div><!-- contents--> 
+  </div><!-- container-->    
+  
+</main><!-- main-->
+
+<footer>
+  <div class="container">
+    <p>©2020 yukken</p>
+  </div><!-- container-->    
+</footer><!-- footer-->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
