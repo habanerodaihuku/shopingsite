@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: "ktegaki";
+  src: url("../fonts/KTEGAKI.ttf");
+}
 
 body {
   font-family: "ktegaki";
