@@ -103,4 +103,51 @@ input[type="submit"]:active {
   margin-top: 1.5vw;
   font-size: 1.5vw;
 }
+
+@media (max-width: 959px) {
+  body {
+    font-size: 6vw;
+  }
+  .contents {
+    width: 60%;
+    padding: 6vw 4vw;
+    border: black solid 0.45vw;
+  }
+  .header_logo {
+    width: 80vw;
+    padding: 5vw 0 3vw 0;
+  }
+  .omikujibox {
+    width: 6.5vw;
+    margin: 1vw;
+  }
+  table {
+    margin: 0 auto;
+  }
+  td, th {
+    display: block;
+  }
+  input {
+    height: 9vw;
+    margin-bottom: 4vw;
+    border: gray solid 0.2vw;
+  }
+  input[type="submit"] {
+    width: 20vw;
+    height: 9vw;
+    margin-top: 7vw;
+  }
+  .result h2 {
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+    font-size: 6vw;
+  }
+  .result .omikuji {
+    width: 25vw;
+  }
+  .result a {
+    font-size: 4vw;
+    margin-top: 5vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */
