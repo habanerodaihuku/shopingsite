@@ -1,3 +1,53 @@
-<img class="header_logo" src=<%= @fortune_image%> >
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!--対策-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!--SEO-->
+    <title>今日のおみくじ占い</title>
+    <meta name="keywords" content="">
+    <meta name="description" content=""><!--ページ詳細. 120字以内に収める。最初の40字は大事。ページごとにそのページの詳細を記載する。-->
+    <meta name="author" content=""><!--製作者の名前or会社名-->
+    <link rel="canonical" href="#"><!--正規のURLを検索エンジンにしめす。-->
 
-<%= link_to("戻る","/")%>
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/stylesheets/normalize.css">  
+    <link rel="stylesheet" href="../assets/stylesheets/style.css">  
+  
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<header>
+  <div class="container">
+    <img class="header_logo" src="/omikuzi_image/logo.png" alt="今日のおみくじ">
+  </div><!-- container-->
+</header><!-- header-->
+
+<main>
+  <div class="container">
+    <div class="contents result">
+      <h2>今日の占い結果は...</h2>
+      <img class="omikuji" src=<%= @fortune_image%> alt="占い結果">
+      <%= link_to("TOPへ戻る","/")%>
+    </div><!-- contents--> 
+  </div><!-- container-->    
+  
+</main><!-- main-->
+
+<footer>
+  <div class="container">
+    <p>Copyright 2020 yukken</p>
+  </div><!-- container-->    
+</footer><!-- footer-->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
