@@ -12,6 +12,14 @@ body {
     background-color: white;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: purple;
+    }
+}
 
 
 .container {
@@ -64,3 +72,21 @@ input[type="submit"] {
     box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.2);
   }
 } 
+
+.result {
+    vertical-align: center;
+
+    h2 {
+        margin-top: 0;
+    }
+  .omikuji {
+      width: 10vw;
+      display: inline-block;
+  }
+
+  a {
+      display: block;
+      margin-top: 1.5vw;
+      font-size: 1.5vw;
+  }
+}
