@@ -17,13 +17,32 @@ body {
 
 .header_logo {
   width: 40vw;
+  padding: 0.3vw 0;
 }
 
 .contents {
-  border: black solid 2px;
+  border: black solid 0.3vw;
+  border-radius: 0.5vw;
   width: 40vw;
-  margin: 2vw auto;
-  padding: 4vw;
-  text-align: center;
+  margin: 1vw auto;
+  padding: 2vw 4vw;
+}
+
+th, td {
+  padding: 1vw 2.5vw;
+}
+
+input {
+  height: 3vw;
+  border: gray solid 0.05vw;
+  border-radius: 0.3vw;
+}
+
+input[type="submit"] {
+  width: 8vw;
+  height: 4vw;
+  border-radius: 0.5vw;
+  margin-top: 1.5vw;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
