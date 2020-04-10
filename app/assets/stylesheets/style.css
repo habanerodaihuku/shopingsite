@@ -38,6 +38,15 @@ a:hover {
   padding: 2vw 4vw;
 }
 
+.top_image {
+  margin-bottom: 1vw;
+}
+
+.omikujibox {
+  width: 4vw;
+  margin: 0.5vw;
+}
+
 th, td {
   padding: 1vw 2.5vw;
 }
