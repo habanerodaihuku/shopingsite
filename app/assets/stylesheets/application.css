@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ @font-face {
+  font-family: "ktegaki";
+  src: url("/assets/KTEGAKI.ttf");
+}

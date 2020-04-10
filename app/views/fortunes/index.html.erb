@@ -12,7 +12,7 @@
     <meta name="keywords" content="">
     <meta name="description" content=""><!--ページ詳細. 120字以内に収める。最初の40字は大事。ページごとにそのページの詳細を記載する。-->
     <meta name="author" content=""><!--製作者の名前or会社名-->
-    <link rel="canonical" href=""><!--正規のURLを検索エンジンにしめす。-->
+    <link rel="canonical" href="#"><!--正規のURLを検索エンジンにしめす。-->
 
     <!--CSS-->
     <link rel="stylesheet" href="../assets/stylesheets/normalize.css">
@@ -34,25 +34,27 @@
   <div class="container">
     <div class="contents">
       <%= form_tag("/fortunes/result") do%>
-          <div >
-              <label for="name">お名前</label>
-              <input type="text" name="name">
-          </div>
+        <table>
+          <tr>
+            <th><label for="name">ニックネーム</label></th>
+            <td><input type="text" name="name" id="name"></td>
+          </tr>
 
-          <div >
-            <label for="birthday">誕生日</label>
-            <input type="text" name="birthday" placeholder="1990-08-24">
-        </div> 
+          <tr class="birthday">
+            <th><label for="birthday">誕生日</label></th>
+            <td><input type="text" name="birthday" id="birthday"　placeholder="1990-08-24"></td>
+          </tr> 
 
-        <div >
-            <label for="gender">性別</label>
-            <input type="text" name="gender">
-        </div>                 
+          <tr>
+            <th><label for="gender">性別</label></th>
+            <td><input type="text" name="gender" id="gender"></td>
+          </tr>                 
 
-        <div >
-            <label for="like">好きなもの</label>
-            <input type="text" name="like">
-        </div>  
+          <tr>
+            <th><label for="like">好きなもの</label></th>
+            <td><input type="text" name="like" id="like"></td>
+          </tr>  
+        </table>
         
         <div>
             <input type="submit" value="占う">
@@ -65,7 +67,7 @@
 
 <footer>
   <div class="container">
-    <p>©2020 yukken</p>
+    <p>Copyright 2020 yukken</p>
   </div><!-- container-->    
 </footer><!-- footer-->
 
