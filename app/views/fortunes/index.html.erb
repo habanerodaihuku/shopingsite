@@ -33,6 +33,11 @@
 <main>
   <div class="container">
     <div class="contents">
+    <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
       <%= form_tag("/fortunes/result") do%>
         <table>
           <tr>
