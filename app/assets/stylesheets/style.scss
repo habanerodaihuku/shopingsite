@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "ktegaki";
+    src: url("../fonts/KTEGAKI.ttf") ;
+}
+
+body {
+    font-family: "ktegaki";
+    font-size: 2vw;
+    text-align: center;
+    background-color: white;
+}
+
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header_logo {
+    width: 40vw;
+}
+
+.contents {
+    border: black solid 2px;
+    width: 40vw;
+    margin: 2vw auto ;
+    padding: 4vw;    
+}
