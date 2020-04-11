@@ -17,7 +17,7 @@ class FortunesController < ApplicationController
       # 数値化した誕生日を1桁ずつ配列に入れる
       birthday_array = birthday_i.chars.map(&:to_i)
       # 配列の値を全て足す
-      birthday_math = birthday_array.inject(:*)
+      birthday_math = birthday_array.inject(:+)
 
       # 性別の文字数
       gender_math = params[:gender].length
@@ -33,9 +33,9 @@ class FortunesController < ApplicationController
 
       result = name_math + birthday_math + gender_math + like_math + date_math
 
-      if result % 27 == 0
+      if result % 11 == 0
         @fortune_image = "/omikuzi_image/omikuji_daikyou.png"
-      elsif result % 23 == 0
+      elsif result % 9 == 0
         @fortune_image = "/omikuzi_image/omikuji_kyou.png"
       elsif result % 7 == 0
         @fortune_image = "/omikuzi_image/omikuji_daikichi.png"
